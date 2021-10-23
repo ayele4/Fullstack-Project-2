@@ -1,3 +1,4 @@
+const API_ACCESSSTOKEN = 'LLWBtBO1lLeQv71VQs_yWinCPrknvU1ujWvoLyg_'
 const dropdowns = document.querySelectorAll('.form-select')
 
 for (let i = 0; i < dropdowns.length; i++) {
@@ -12,7 +13,7 @@ function usePredictHQ(eventsData, index) {
     let query = `https://api.predicthq.com/v1/events/?place.scope=5389489&category=${eventsData}`// append categories from predicthq /
     let headers = {
       "Content-Type": "application/json",
-      "Authorization": "Bearer ooYMC7ioSzvttiyL-wfE6TW1VesS6ekt3uS4_RZZ",    
+      "Authorization": "Bearer LLWBtBO1lLeQv71VQs_yWinCPrknvU1ujWvoLyg_",    
     };
   
     fetch(query, {
